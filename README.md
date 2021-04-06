@@ -27,7 +27,7 @@ Das Ziel des Projektes ist die Vermittlung praktischer Fähigkeiten und Vorgehen
 In diesem Jahr stehen dazu zwei Aufgabenkomplexe zur Auswahl:
 
 1. Mobile Robotik - Unser [Husky](https://clearpathrobotics.com/husky-unmanned-ground-vehicle-robot/)
-2. Die Matlab/Simulink Challenge
+2. Die [Virtual Robot Manipulation Challenge](https://2021.robocup.org/robot-manipulation)
 
 ##  Husky
 
@@ -82,7 +82,23 @@ Aufgaben:
 * Planung und Organisation von Tests mit der Hardware
 * Teamübergreifende Dokumentation zum Gesamtsystem
 
-## Matlab/Simulink Challenge
+## Virtual Robot Manipulation Challenge
+
+In diesem Komplex steht die diesjährige ***Virtual Robot Manipulation Challenge*** im Rahmen des RoboCup im Fordergrund. Der Startpunkt bildet eine virtuelle Maschine in der ROS, die Simulationsumgebung ***Gazebo*** sowie Matlab/Simulink installiert ist. Eine genaue Beschreibung findet ihr [hier](https://drive.google.com/file/d/1XsqPbdbBytJQN5iuLUbxxRCwX8qr-MZS/view)
+
+![previewer](https://lh5.googleusercontent.com/YDKO6tODnINK6NZsBkr_65M93-f9fGIwIZeLlPG9iHzRirsYocYwdR9fdiB5gFNzl04V6SeWc5QKkMFCJOcyZLVQaS3kF-OxnAaWo1bllutLChPNrrinO0B1fxshsANfrw=w1280)
+
+Die Hauptaufgabe besteht darin Flaschen und Büchsen in entsprechende Abfalleimer zu sortieren.
+
+Aufgaben:
+* Nutzung von RGB-D Kameradaten
+* Objektdetektion und -Lokalisation
+* Klassifikation von Objekten
+* Manipulation von Objekten
+
+Herausforderungen:
+* Die Konturen der Objekte ändern sind. Das heißt, es gibt Objekte mit statischer Kontur, dynamischer Positionierung und gänzlich unbekannte Objekte. Abhängig davon wie herausfordernd die Objektidentifikation und -Manipulation ist, werden mehr oder weniger Punkte vergeben.
+
 
 
 ## In welchem Team bist du?
@@ -102,10 +118,10 @@ Abhängig von den individuellen Aufgaben solltet ihr in eurem Teams zunächst:
 ## Ablaufplan
 
 **Wöchentliche Meetings:**
-| Aufgabenkomplex | Meeting                  |
-|:----------------|:-------------------------|
-| Husky           | Donnerstag 14:00 - 15:30 |
-| RoboCup         | ???                      |
+| Aufgabenkomplex   | Meeting                  |
+|:------------------|:-------------------------|
+| Husky             | Donnerstag 14:00 - 15:30 |
+| RoboCup Challenge | ???                      |
 
 **Bei jedem Meeting wird ein Mitglied von jedem Team kurz die Fortschritte zusammenfassen:**
 * Welche Ziele wurden für die Woche gesetzt?
