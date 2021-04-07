@@ -103,6 +103,8 @@ Aufgaben:
 Herausforderungen:
 * Die Konturen der Objekte ändern sind. Das heißt, es gibt Objekte mit statischer Kontur, dynamischer Positionierung und gänzlich unbekannte Objekte. Abhängig davon wie herausfordernd die Objektidentifikation und -Manipulation ist, werden mehr oder weniger Punkte vergeben.
 
+Für einen leichteren Start in die Challenge gab es bereits ein Q&A, das ihr [hier](https://drive.google.com/file/d/1ScSt16rdAy-nUWU4ztD-4lzDRnuOgqS_/view?usp=sharing) findet.
+
 
 
 ## In welchem Team bist du?
