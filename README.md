@@ -20,7 +20,7 @@ link: https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
 # Praktische Phase des Robotik-Projektes 2021
 
-Die interaktive Ansicht dieses Kurses ist unter folgendem [Link](https://liascript.github.io/course/?https://raw.githubusercontent.com/TUBergakademieFreiberg/Softwaretechnologieprojekt2020/master/README.md) verfügbar.
+Die interaktive Ansicht dieses Kurses ist unter folgendem [Link](https://liascript.github.io/course/?https://raw.githubusercontent.com/ComputerScienceLecturesTUBAF/RobotikProjekt-SoSe21/main/README.md) verfügbar.
 
 Das Ziel des Projektes ist die Vermittlung praktischer Fähigkeiten und Vorgehensweise zur Erstellung von Software in einem Teamprojekt.
 
