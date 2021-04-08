@@ -31,9 +31,9 @@ In diesem Jahr stehen dazu zwei Aufgabenkomplexe zur Auswahl:
 
 ##  Husky
 
-![previewer](./imgs/Husky1.jpg)
-![previewer](./imgs/Husky2.jpg)
-![previewer](./imgs/Husky3.jpg)
+![previewer](./imgs/Husky03.jpeg)
+![previewer](./imgs/Husky05.jpeg)
+![previewer](./imgs/Husky02.jpeg)
 
 In diesem Komplex zielen die Aufgaben auf die Komponenten unseres mobilen Husky Roboters ab. Das Ziel wird es sein den Roboter am Ende des Semesters auf einem Gehweg über das Campusgelände fahren zu lassen. Dafür sind verschiedene Komponenten notwendig:
 
