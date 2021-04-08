@@ -90,7 +90,7 @@ Aufgaben:
 
 In diesem Komplex steht die diesjährige ***Virtual Robot Manipulation Challenge*** im Rahmen des RoboCup im Fordergrund. Der Startpunkt bildet eine virtuelle Maschine in der ROS, die Simulationsumgebung ***Gazebo*** sowie Matlab/Simulink installiert ist. Eine genaue Beschreibung findet ihr [hier](https://drive.google.com/file/d/1XsqPbdbBytJQN5iuLUbxxRCwX8qr-MZS/view)
 
-![previewer](https://lh5.googleusercontent.com/YDKO6tODnINK6NZsBkr_65M93-f9fGIwIZeLlPG9iHzRirsYocYwdR9fdiB5gFNzl04V6SeWc5QKkMFCJOcyZLVQaS3kF-OxnAaWo1bllutLChPNrrinO0B1fxshsANfrw=w1280)
+![previewer](./imgs/robocup.png)
 
 Die Hauptaufgabe besteht darin Flaschen und Büchsen in entsprechende Abfalleimer zu sortieren.
 
