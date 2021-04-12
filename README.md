@@ -210,7 +210,7 @@ Hier soll vor allem eine konsistente, intuitive Struktur angestrebt werden.
 
 ## Organisatorisches
 
-Falls noch nicht vorhanden, benötigen alle Teilnehmer einen Account für unsere GitLab Instanz.
+Falls noch nicht vorhanden, benötigen alle Teilnehmer einen Account für unsere [GitLab](https://git.informatik.tu-freiberg.de/) Instanz.
 Schreibt dazu bitte eine **Mail** mit dem gewünschten **Username** an [Georg Jäger](mailto:georg.jaeger@informatik.tu-freiberg.de)
 
 Alle Teams sollten ihr Softwareprojekt innerhalb eines dort angesiedelten Git-Repositories durchführen.
