@@ -18,16 +18,12 @@ link: https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
 -->
 
-# Praktische Phase des Robotik-Projektes 2021
+# Praktische Phase des Robotik-Projektes 2022
 
 Die interaktive Ansicht dieses Kurses ist unter folgendem [Link](https://liascript.github.io/course/?https://raw.githubusercontent.com/ComputerScienceLecturesTUBAF/RobotikProjekt-SoSe21/main/README.md) verfügbar.
 
 Das Ziel des Projektes ist die Vermittlung praktischer Fähigkeiten und Vorgehensweise zur Erstellung von Software in einem Teamprojekt.
-
-In diesem Jahr stehen dazu zwei Aufgabenkomplexe zur Auswahl:
-
-1. Mobile Robotik - Unser [Husky](https://clearpathrobotics.com/husky-unmanned-ground-vehicle-robot/)
-2. Die [Virtual Robot Manipulation Challenge](https://2021.robocup.org/robot-manipulation)
+Entsprechend dem Wintersemester, in dem wir uns mit den TurtleBots beschäftigt haben, wollen wir das erlangte Wissen nun auf einen Outdoor-Roboter anwenden: der Clearpath [Husky](https://clearpathrobotics.com/husky-unmanned-ground-vehicle-robot/)
 
 ##  Husky
 
@@ -35,11 +31,12 @@ In diesem Jahr stehen dazu zwei Aufgabenkomplexe zur Auswahl:
 ![previewer](./imgs/Husky05.jpeg)
 ![previewer](./imgs/Husky02.jpeg)
 
-In diesem Komplex zielen die Aufgaben auf die Komponenten unseres mobilen Husky Roboters ab. Das Ziel wird es sein den Roboter am Ende des Semesters auf einem Gehweg über das Campusgelände fahren zu lassen. Dafür sind verschiedene Komponenten notwendig:
+Das Ziel wird es sein den Roboter am Ende des Semesters auf einem Gehweg über das Campusgelände fahren zu lassen. Dafür sind verschiedene Komponenten notwendig:
 
 
 * **Sensorik**
 * **Kamera**
+* **Mapping**
 * **Navigation**
 * **Integration und Organisation**
 
@@ -64,15 +61,26 @@ Aufgaben:
 * Auswertung der Kameradaten zur Extraktion von befahrbaren Bereichen, speziell von Gehwegen
 * Im Fall eines lernbasierten Ansatzes, soll eine entsprechende Datenbasis aufgebaut werden.
 
+***Mapping***
+
+Die Hauptaufgabe besteht darin, die vorhandene Sensorik zu nutzen um Karten zur Navigation zu erstellen. 
+
+Aufgaben:
+* Aufnahme von rosbags um verschiedene Karten mit Hilfe verschiedener Algorithmen zu erstellen
+* Zur Verfügung stellen von rosbags für andere Teams (via Orga-Team)
+* Generierung von Karten für das Navigationsteam
+* Evaluation verschiedener Kartenformate
+  * Occupancy Grid Map
+  * [lanelets2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2)
+
 ***Navigation***
 
 Die Navigation nutzt die Daten der vorhandenen Sensorik um den Roboter zum Zielpunkt zu navigieren. In unserem Szenario soll der Roboter dem Gehweg auf dem Campus folgen.
 
 Aufgaben:
-* Inbetriebnahme des Navigation Stack unter ROS2
-* Integration der sensorischen Daten in die Kartendarstellung(en)
-* Trajektorienplanung
+* Trajektorienplanung [NavStack2](https://navigation.ros.org/)
 * Kollisionsvermeidung (LiDAR)
+* Geo-Fencing (Notstop, sobald der Roboter seinen per GNSS vorgegebenen Fahrbereich verlässt)
 
 ***Integration und Organisation***
 
@@ -86,26 +94,13 @@ Aufgaben:
 * Planung und Organisation von Tests mit der Hardware
 * Teamübergreifende Dokumentation zum Gesamtsystem
 
-## Virtual Robot Manipulation Challenge
+## Befahrbare Wege
 
-In diesem Komplex steht die diesjährige ***Virtual Robot Manipulation Challenge*** im Rahmen des RoboCup im Fordergrund. Der Startpunkt bildet eine virtuelle Maschine in der ROS, die Simulationsumgebung ***Gazebo*** sowie Matlab/Simulink installiert ist. Eine genaue Beschreibung findet ihr [hier](https://drive.google.com/file/d/1XsqPbdbBytJQN5iuLUbxxRCwX8qr-MZS/view)
+[[preview]](./imgs/BefahrbareWege1.png)
 
-![previewer](./imgs/robocup.png)
-
-Die Hauptaufgabe besteht darin Flaschen und Büchsen in entsprechende Abfalleimer zu sortieren.
-
-Aufgaben:
-* Nutzung von RGB-D Kameradaten
-* Objektdetektion und -Lokalisation
-* Klassifikation von Objekten
-* Manipulation von Objekten
-
-Herausforderungen:
-* Die Konturen der Objekte ändern sind. Das heißt, es gibt Objekte mit statischer Kontur, dynamischer Positionierung und gänzlich unbekannte Objekte. Abhängig davon wie herausfordernd die Objektidentifikation und -Manipulation ist, werden mehr oder weniger Punkte vergeben.
-
-Für einen leichteren Start in die Challenge gab es bereits ein Q&A, das ihr [hier](https://drive.google.com/file/d/1ScSt16rdAy-nUWU4ztD-4lzDRnuOgqS_/view?usp=sharing) findet.
-
-
+In Absprache mit der TU Bergakademie Freiberg und der Stadt Freiberg, kann der Roboter auf den Gehwegen der Straße/Wege betrieben werden, die in der Karte mit grün markiert sind.
+An Straßen, die mit rot markiert sind, darf der Roboter lediglich transportiert werden.
+Auf allen weiteren Wegen/Straßen sollte der Roboter weder transportiert noch betrieben werden!
 
 ## In welchem Team bist du?
 
@@ -126,8 +121,7 @@ Abhängig von den individuellen Aufgaben solltet ihr in eurem Teams zunächst:
 **Wöchentliche Meetings:**
 | Aufgabenkomplex   | Meeting                  |
 |:------------------|:-------------------------|
-| Husky             | Donnerstag 14:00 - 15:30 |
-| RoboCup Challenge | ???                      |
+| Husky             | Montag 14:00 - 15:30 |
 
 **Bei jedem Meeting wird ein Mitglied von jedem Team kurz die Fortschritte zusammenfassen:**
 * Welche Ziele wurden für die Woche gesetzt?
@@ -160,18 +154,9 @@ Zusätzlich wird jedes Team drei Vorträge halten.
 
 | **Datum**              | **Vorträge**             |
 |:-----------------------|:-------------------------|
-| 22.04.21 14:00 - 15:30 | Exposé (Husky)           |
-| 29.04.21 14:00 - 15:30 | Exposé (Husky)           |
-| ???                    | Exposé (Matlab)          |
-| ???                    | Exposé (Matlab)          |
-| 27.05.21 14:00 - 15:30 | Zwischenstand (Husky)    |
-| 03.06.21 14:00 - 15:30 | Zwischenstand (Husky)    |
-| ???                    | Zwischenstand            |
-| ???                    | Zwischenstand            |
-| 08.07.21 14:00 - 15:30 | Abschlussvortrag (Husky) |
-| 15.07.21 14:00 - 15:30 | Abschlussvortrag (Husky) |
-| ???                    | Abschlussvortrag         |
-| ???                    | Abschlussvortrag         |
+| 25.04.22 14:00 - 15:30 | Exposé      |
+| 23.05.22 14:00 - 15:30 | Zwischenstand    |
+| 11.07.22 14:00 - 15:30 | Abschlussvortrag  |
 
 ## Bewertungskriterien und ihre Gewichtung
 
@@ -211,6 +196,6 @@ Hier soll vor allem eine konsistente, intuitive Struktur angestrebt werden.
 ## Organisatorisches
 
 Falls noch nicht vorhanden, benötigen alle Teilnehmer einen Account für unsere GitLab Instanz.
-Schreibt dazu bitte eine **Mail** mit dem gewünschten **Username** an [Georg Jäger](mailto:georg.jaeger@informatik.tu-freiberg.de)
+Schreibt dazu bitte eine **Mail** mit dem gewünschten **Username** an [Georg Jäger](mailto:georg.jaeger@informatik.tu-freiberg.de) oder [Gero Licht](mailto:joern-gero.licht@informatik.tu-freiberg.de)
 
 Alle Teams sollten ihr Softwareprojekt innerhalb eines dort angesiedelten Git-Repositories durchführen.
