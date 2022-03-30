@@ -20,7 +20,7 @@ link: https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
 # Praktische Phase des Robotik-Projektes 2022
 
-Die interaktive Ansicht dieses Kurses ist unter folgendem [Link](https://liascript.github.io/course/?https://raw.githubusercontent.com/ComputerScienceLecturesTUBAF/RobotikProjekt-SoSe21/main/README.md) verfügbar.
+Die interaktive Ansicht dieses Kurses ist unter folgendem [Link](https://liascript.github.io/course/?https://raw.githubusercontent.com/ComputerScienceLecturesTUBAF/RobotikProjekt-Praxis/main/README.md) verfügbar.
 
 Das Ziel des Projektes ist die Vermittlung praktischer Fähigkeiten und Vorgehensweise zur Erstellung von Software in einem Teamprojekt.
 Entsprechend dem Wintersemester, in dem wir uns mit den TurtleBots beschäftigt haben, wollen wir das erlangte Wissen nun auf einen Outdoor-Roboter anwenden: der Clearpath [Husky](https://clearpathrobotics.com/husky-unmanned-ground-vehicle-robot/)
