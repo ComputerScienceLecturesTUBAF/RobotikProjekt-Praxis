@@ -47,6 +47,7 @@ Jedes der Themenkomplexe wird von einem Team bearbeitet, wobei ein kontinuierlic
 Im Bereich der Sensorik sollen die verfügbaren Datenquellen (insbesondere GNSS und LiDAR Sensor) in Betrieb genommen werden. Dazu zählt zum einen deren Einbindung in ROS und zum anderen eine Bewertung der Güte der gelieferten Daten.
 
 Aufgaben:
+
 * Bereitstellung der sensorischen Daten in ROS/ROS2
 * Auswertung der LiDAR Daten zur Objekterkennung
 * Auswertung der GNSS und Odometrie Daten zur Navigation
@@ -57,15 +58,17 @@ Aufgaben:
 Die Hauptaufgabe besteht darin mit einer Kamera ([ZED2](https://www.stereolabs.com/zed-2/)) den Gehweg (und befahrbaren Bereich) vor dem Roboter zu erkennen.
 
 Aufgaben:
+
 * Bereitstellung der Kameradaten in ROS/ROS2
 * Auswertung der Kameradaten zur Extraktion von befahrbaren Bereichen, speziell von Gehwegen
 * Im Fall eines lernbasierten Ansatzes, soll eine entsprechende Datenbasis aufgebaut werden.
 
 ***Mapping***
 
-Die Hauptaufgabe besteht darin, die vorhandene Sensorik zu nutzen um Karten zur Navigation zu erstellen. 
+Die Hauptaufgabe besteht darin, die vorhandene Sensorik zu nutzen um Karten zur Navigation zu erstellen.
 
 Aufgaben:
+
 * Aufnahme von rosbags um verschiedene Karten mit Hilfe verschiedener Algorithmen zu erstellen
 * Zur Verfügung stellen von rosbags für andere Teams (via Orga-Team)
 * Generierung von Karten für das Navigationsteam
@@ -78,6 +81,7 @@ Aufgaben:
 Die Navigation nutzt die Daten der vorhandenen Sensorik um den Roboter zum Zielpunkt zu navigieren. In unserem Szenario soll der Roboter dem Gehweg auf dem Campus folgen.
 
 Aufgaben:
+
 * Trajektorienplanung [NavStack2](https://navigation.ros.org/)
 * Kollisionsvermeidung (LiDAR)
 * Geo-Fencing (Notstop, sobald der Roboter seinen per GNSS vorgegebenen Fahrbereich verlässt)
@@ -87,6 +91,7 @@ Aufgaben:
 Die individuellen Arbeiten der zuvor genannten Themenbereiche müssen integriert werden um einen funktionstüchtigen Roboter zu erhalten. Desweiteren steht lediglich ein mobiler Roboter zur Verfügung, auf den mehrere Teams zugreifen wollen. Daher ergeben sich in diesem Komplex folgende Aufgaben.
 
 Aufgaben:
+
 * Schnittstellendefinition und Softwareintegration (ROS vs ROS2, Nachrichtenformate, etc.)
 * Unit- und Integrationtests
 * Zugriff auf die Hardwarekomponenten und den Roboter
@@ -96,7 +101,7 @@ Aufgaben:
 
 ## Befahrbare Wege
 
-[[preview]](./imgs/BefahrbareWege1.png)
+![preview](./imgs/BefahrbareWege1.png)
 
 In Absprache mit der TU Bergakademie Freiberg und der Stadt Freiberg, kann der Roboter auf den Gehwegen der Straße/Wege betrieben werden, die in der Karte mit grün markiert sind.
 An Straßen, die mit rot markiert sind, darf der Roboter lediglich transportiert werden.
@@ -119,11 +124,12 @@ Abhängig von den individuellen Aufgaben solltet ihr in eurem Teams zunächst:
 ## Ablaufplan
 
 **Wöchentliche Meetings:**
-| Aufgabenkomplex   | Meeting                  |
-|:------------------|:-------------------------|
-| Husky             | Montag 14:00 - 15:30 |
+| Aufgabenkomplex | Meeting              |
+|:----------------|:---------------------|
+| Husky           | Montag 14:00 - 15:30 |
 
 **Bei jedem Meeting wird ein Mitglied von jedem Team kurz die Fortschritte zusammenfassen:**
+
 * Welche Ziele wurden für die Woche gesetzt?
 * Welche Ziele wurden erreicht, welche nicht? Warum?
 * Welche Ziele gibt es für die kommende Woche?
@@ -148,15 +154,16 @@ Zusätzlich wird jedes Team drei Vorträge halten.
   * Wo steht ihr bezüglich des Plans? Sind Anpassungen notwendig?
 
 * Abschlussvortrag:
+
   * Zusammenfassung des Projektes (zeitlich, inhaltlich, konzeptionell)
 
 **Ablaufplan für die Vorträge**
 
-| **Datum**              | **Vorträge**             |
-|:-----------------------|:-------------------------|
-| 25.04.22 14:00 - 15:30 | Exposé      |
+| **Datum**              | **Vorträge**     |
+|:-----------------------|:-----------------|
+| 25.04.22 14:00 - 15:30 | Exposé           |
 | 23.05.22 14:00 - 15:30 | Zwischenstand    |
-| 11.07.22 14:00 - 15:30 | Abschlussvortrag  |
+| 11.07.22 14:00 - 15:30 | Abschlussvortrag |
 
 ## Bewertungskriterien und ihre Gewichtung
 
