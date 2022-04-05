@@ -159,11 +159,11 @@ Zusätzlich wird jedes Team drei Vorträge halten.
 
 **Ablaufplan für die Vorträge**
 
-| **Datum**              | **Vorträge**     |
-|:-----------------------|:-----------------|
-| 25.04.22 14:00 - 15:30 | Exposé           |
-| 23.05.22 14:00 - 15:30 | Zwischenstand    |
-| 11.07.22 14:00 - 15:30 | Abschlussvortrag |
+| **Datum**                      | **Vorträge**     |
+|:-------------------------------|:-----------------|
+| Mittwoch, 27.04. 11:00 - 12:30 | Exposé           |
+| Montag, 23.05.22 14:00 - 15:30 | Zwischenstand    |
+| Montag, 11.07.22 14:00 - 15:30 | Abschlussvortrag |
 
 ## Bewertungskriterien und ihre Gewichtung
 
