@@ -60,13 +60,13 @@ Vorgeschlagene Teamstruktur:
 
 ## Organisatorisches
 
-## In welchem Team bist du?
+### In welchem Team bist du?
 
 Eure erste Aufgabe besteht darin, euch für ein Team zu entscheiden! Findet euch den Aufgabenkomplexen entsprechend zu Teams zusammen und setzt Kommunikationswege auf.
 
 Schickt bitte eine Mail an [Gero Licht](mailto:gero.licht@informatik.tu-freiberg.de?subject=[RobotikProjektSS21]) mit den Namen eurer Teammitglieder, eurem Teamname und eurem Teamleiter (+ seine Mailadresse).
 
-## Erste Schritte
+### Erste Schritte
 
 Abhängig von den individuellen Aufgaben solltet ihr in eurem Teams zunächst:
 
@@ -76,7 +76,7 @@ Abhängig von den individuellen Aufgaben solltet ihr in eurem Teams zunächst:
 * Gitlab Repository aufsetzen [Link](https://gitlab.hrz.tu-chemnitz.de/)
 * Chat einrichten [Matrix](https://matrix.tu-freiberg.de/)
 
-## Ablaufplan
+### Ablaufplan
 
 **Wöchentliche Meetings:**
 
