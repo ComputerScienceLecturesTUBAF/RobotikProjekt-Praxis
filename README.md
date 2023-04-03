@@ -24,7 +24,7 @@ Die interaktive Ansicht dieses Kurses ist unter folgendem [Link](https://liascri
 
 ## Rückblick auf das vergangene Jahr
 
-_Das Ziel wird es sein den Roboter am Ende des Semesters auf einem Gehweg über das Campusgelände fahren zu lassen. Dafür sind verschiedene Komponenten notwendig:_
+_Das Ziel wird es sein den Roboter am Ende des Semesters auf einem Gehweg über das Campusgelände fahren zu lassen._
 
 ![previewer](./imgs/Husky03.jpeg)
 
