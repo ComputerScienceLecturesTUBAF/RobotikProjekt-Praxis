@@ -18,100 +18,53 @@ link: https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
 -->
 
-# Praktische Phase des Robotik-Projektes 2022
+# Praktische Phase des Robotik-Projektes 2023
 
 Die interaktive Ansicht dieses Kurses ist unter folgendem [Link](https://liascript.github.io/course/?https://raw.githubusercontent.com/ComputerScienceLecturesTUBAF/RobotikProjekt-Praxis/main/README.md) verfügbar.
 
-Das Ziel des Projektes ist die Vermittlung praktischer Fähigkeiten und Vorgehensweise zur Erstellung von Software in einem Teamprojekt.
-Entsprechend dem Wintersemester, in dem wir uns mit den TurtleBots beschäftigt haben, wollen wir das erlangte Wissen nun auf einen Outdoor-Roboter anwenden: der Clearpath [Husky](https://clearpathrobotics.com/husky-unmanned-ground-vehicle-robot/)
+## Rückblick auf das vergangene Jahr
 
-##  Husky
+_Das Ziel wird es sein den Roboter am Ende des Semesters auf einem Gehweg über das Campusgelände fahren zu lassen. Dafür sind verschiedene Komponenten notwendig:_
 
 ![previewer](./imgs/Husky03.jpeg)
-![previewer](./imgs/Husky05.jpeg)
-![previewer](./imgs/Husky02.jpeg)
 
-Das Ziel wird es sein den Roboter am Ende des Semesters auf einem Gehweg über das Campusgelände fahren zu lassen. Dafür sind verschiedene Komponenten notwendig:
-
-
+Teams:
 * **Sensorik**
 * **Kamera**
 * **Mapping**
 * **Navigation**
 * **Integration und Organisation**
 
-Jedes der Themenkomplexe wird von einem Team bearbeitet, wobei ein kontinuierlicher Austausch zwischen allen Teams notwendig ist.
+> Herausforderungen: "Fehleranfälligkeit" des Roboters, fehlendes Aufgabenverständis, später Arbeitsbeginn
 
-***Sensorik***
+## Auf ein Neues!
 
-Im Bereich der Sensorik sollen die verfügbaren Datenquellen (insbesondere GNSS und LiDAR Sensor) in Betrieb genommen werden. Dazu zählt zum einen deren Einbindung in ROS und zum anderen eine Bewertung der Güte der gelieferten Daten.
+![image](https://emanual.robotis.com/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_1.png)
 
-Aufgaben:
++ Traffic Lights
++ Intersection
++ Construction
++ Parking
++ Level Crossing
++ Tunnel
 
-* Bereitstellung der sensorischen Daten in ROS/ROS2
-* Auswertung der LiDAR Daten zur Objekterkennung
-* Auswertung der GNSS und Odometrie Daten zur Navigation
-* Evaluation der Sensoren hinsichtlich ihrer Güte, insbesondere in verschiedenen Kontextsituationen
+!?[Szenario](https://www.youtube.com/watch?v=8K4GMbfXFXI&t=46s)
 
-***Kamera***
+Vorgeschlagene Teamstruktur:
 
-Die Hauptaufgabe besteht darin mit einer Kamera ([ZED2](https://www.stereolabs.com/zed-2/)) den Gehweg (und befahrbaren Bereich) vor dem Roboter zu erkennen.
+| Partner | Aufgaben |
+|---------|--------|
+|1 | Schildererkennung einschließlich Ampel und Schranke|
+|2| Linienerkennung und dazwischen fahren, einparken|
+| 3 | Pfadplanung um Hindernisse mit Laserscanner (Tunnel und Baustelle)|
 
-Aufgaben:
-
-* Bereitstellung der Kameradaten in ROS/ROS2
-* Auswertung der Kameradaten zur Extraktion von befahrbaren Bereichen, speziell von Gehwegen
-* Im Fall eines lernbasierten Ansatzes, soll eine entsprechende Datenbasis aufgebaut werden.
-
-***Mapping***
-
-Die Hauptaufgabe besteht darin, die vorhandene Sensorik zu nutzen um Karten zur Navigation zu erstellen.
-
-Aufgaben:
-
-* Aufnahme von rosbags um verschiedene Karten mit Hilfe verschiedener Algorithmen zu erstellen
-* Zur Verfügung stellen von rosbags für andere Teams (via Orga-Team)
-* Generierung von Karten für das Navigationsteam
-* Evaluation verschiedener Kartenformate
-  * Occupancy Grid Map
-  * [lanelets2](https://github.com/fzi-forschungszentrum-informatik/Lanelet2)
-
-***Navigation***
-
-Die Navigation nutzt die Daten der vorhandenen Sensorik um den Roboter zum Zielpunkt zu navigieren. In unserem Szenario soll der Roboter dem Gehweg auf dem Campus folgen.
-
-Aufgaben:
-
-* Trajektorienplanung [NavStack2](https://navigation.ros.org/)
-* Kollisionsvermeidung (LiDAR)
-* Geo-Fencing (Notstop, sobald der Roboter seinen per GNSS vorgegebenen Fahrbereich verlässt)
-
-***Integration und Organisation***
-
-Die individuellen Arbeiten der zuvor genannten Themenbereiche müssen integriert werden um einen funktionstüchtigen Roboter zu erhalten. Desweiteren steht lediglich ein mobiler Roboter zur Verfügung, auf den mehrere Teams zugreifen wollen. Daher ergeben sich in diesem Komplex folgende Aufgaben.
-
-Aufgaben:
-
-* Schnittstellendefinition und Softwareintegration (ROS vs ROS2, Nachrichtenformate, etc.)
-* Unit- und Integrationtests
-* Zugriff auf die Hardwarekomponenten und den Roboter
-* Verwaltung von aufgenommenen Datensätzen
-* Planung und Organisation von Tests mit der Hardware
-* Teamübergreifende Dokumentation zum Gesamtsystem
-
-## Befahrbare Wege
-
-![preview](./imgs/BefahrbareWege1.png)
-
-In Absprache mit der TU Bergakademie Freiberg und der Stadt Freiberg, kann der Roboter auf den Gehwegen der Straße/Wege betrieben werden, die in der Karte mit grün markiert sind.
-An Straßen, die mit rot markiert sind, darf der Roboter lediglich transportiert werden.
-Auf allen weiteren Wegen/Straßen sollte der Roboter weder transportiert noch betrieben werden!
+## Organisatorisches
 
 ## In welchem Team bist du?
 
-Eure erste Aufgabe besteht darin, euch für ein Team zu entscheiden!Findet euch den Aufgabenkomplexen entsprechend zu Teams zusammen und setzt Kommunikationswege auf.
+Eure erste Aufgabe besteht darin, euch für ein Team zu entscheiden! Findet euch den Aufgabenkomplexen entsprechend zu Teams zusammen und setzt Kommunikationswege auf.
 
-Schickt bitte eine Mail an [Georg Jäger](mailto:georg.jaeger@informatik.tu-freiberg.de?subject=[RobotikProjektSS21]) mit den Namen eurer Teammitglieder, eurem Teamname und eurem Teamleiter (+ seine Mailadresse).
+Schickt bitte eine Mail an [Gero Licht](mailto:gero.licht@informatik.tu-freiberg.de?subject=[RobotikProjektSS21]) mit den Namen eurer Teammitglieder, eurem Teamname und eurem Teamleiter (+ seine Mailadresse).
 
 ## Erste Schritte
 
@@ -120,13 +73,17 @@ Abhängig von den individuellen Aufgaben solltet ihr in eurem Teams zunächst:
 * Die Aufgabe(n) diskutieren
 * Methodiken und Ansätze zur Bearbeitung der Aufgabe identifizieren
 * Deren Funktionsweise verstehen und evaluieren, ob diese zur eurer Aufgabe passen
+* Gitlab Repository aufsetzen [Link](https://gitlab.hrz.tu-chemnitz.de/)
+* Chat einrichten [Matrix](https://matrix.tu-freiberg.de/)
 
 ## Ablaufplan
 
 **Wöchentliche Meetings:**
-| Aufgabenkomplex | Meeting              |
-|:----------------|:---------------------|
-| Husky           | Montag 14:00 - 15:30 |
+
+| Meeting                  |
+|:-------------------------|
+| Montag 14:00 - 15:30     |
+| Donnerstag 11:30 - 13:00 |
 
 **Bei jedem Meeting wird ein Mitglied von jedem Team kurz die Fortschritte zusammenfassen:**
 
@@ -159,50 +116,34 @@ Zusätzlich wird jedes Team drei Vorträge halten.
 
 **Ablaufplan für die Vorträge**
 
-| **Datum**                      | **Vorträge**     |
-|:-------------------------------|:-----------------|
-| Mittwoch, 27.04. 11:00 - 12:30 | Exposé           |
-| Montag, 23.05.22 14:00 - 15:30 | Zwischenstand    |
-| Montag, 11.07.22 14:00 - 15:30 | Abschlussvortrag |
+| **Datum**             | **Vorträge**     |
+|:----------------------|:-----------------|
+| Ende April            | Exposé           |
+| Ende Mai              | Zwischenstand  + Demo   |
+| Letzte Semesterwoche  | Abschlussvortrag |
 
 ## Bewertungskriterien und ihre Gewichtung
 
-**1. Vorträge (2/3)**
+**1. Vorträge**
 
 Die Exposé-, Zwischenstands- und Verteidigungsvorträge werden mit 2/3 den Großteil der Bewertung ausmachen.
 Hier geht es darum alle Aspekte des Projektes anschaulich und selbstkritisch Darzustellen.
 Im Fokus stehen die eingesetzen Techniken und Konzepte, sowie Entscheidungsprozesse zu dokumentieren und zu begründen.
 
-**2. Dokumentation (1/9)**
+**2. Dokumentation**
 
 Ebenfalls von großer Bedeutung bei Softwareprojekten ist die hinreichende Dokumentation der Software.
 Dementsprechend fließt auch diese in die Bewertung mit ein.
 Entscheidend ist hierbei jedoch, dass (neben den Vorträgen, die auch der Dokumentation dienen) eine Anleitung zur Nutzung der Software sowie für mögliche Weiterentwicklungen entsteht.
 
-**3. Tooling (1/9)**
+**3. Tooling**
 
 Neben den dokumentativen Aufgaben kann der Einsatz der richtigen Tools dramatisch zum Erfolg/Misserfolg eines Projektes beitragen.
 Dementsprechend sollten (soweit sinnvoll) Tools zur Automatisierung/Unterstützung des Entwicklungsprozesses eingesetzt werden.
 Dokumentiert sowohl den Einsatz der Tools, als auch, wie hilfreich ihr diese Empfunden habt.
 
-**4. Softwarearchitektur (1/9)**
+**4. Softwarearchitektur**
 
 Letztlich steht auch die Softwarearchitektur als zentrale Komponent eines Softwareprojekts im Fokus des Semesters.
 Hier soll vor allem eine konsistente, intuitive Struktur angestrebt werden.
 *Hinweis: Eine Software, die sich schlecht dokumentieren lässt, ist vermutlich nicht intuitiv oder gar schlecht strukturiert!*
-
-
-
-**Beispielrechnung:**
-
-| **Vortrag 1**   | **Vortrag 2**    | **Vortrag 3**    | **Dokumentation** | **Tooling**      | **Softwarearchitektur** | **Note** |
-|:----------------|:-----------------|:-----------------|:------------------|:-----------------|:------------------------|:---------|
-| $1.0 \cdot 2/9$ | $2.3 \cdot  2/9$ | $1.3 \cdot  2/9$ | $2.0 \cdot 1/9$   | $1.3 \cdot  1/9$ | $1.7 \cdot 1/9$         | **1.7**  |
-
-
-## Organisatorisches
-
-Falls noch nicht vorhanden, benötigen alle Teilnehmer einen Account für unsere GitLab Instanz.
-Schreibt dazu bitte eine **Mail** mit dem gewünschten **Username** an [Georg Jäger](mailto:georg.jaeger@informatik.tu-freiberg.de) oder [Gero Licht](mailto:joern-gero.licht@informatik.tu-freiberg.de)
-
-Alle Teams sollten ihr Softwareprojekt innerhalb eines dort angesiedelten Git-Repositories durchführen.
